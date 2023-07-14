@@ -87,6 +87,14 @@ select {
   }
 }
 
+// visually hidden
+
+.alert-message {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
 // structure
 
 body {
@@ -170,11 +178,13 @@ form input {
   border-radius: 30px;
   border: 0;
   cursor: pointer;
+  color: $light-gray;
+  padding-left: 2em;
+  font-family: $font-chivo;
 }
 
 form input::placeholder {
   color: $light-gray;
-  padding-left: 2em;
   font-family: $font-chivo;
   font-size: 14px;
 }

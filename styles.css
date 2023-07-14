@@ -76,6 +76,12 @@ select {
     scroll-behavior: auto !important;
   }
 }
+.alert-message {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #121725;
   padding: 130px 0 130px 165px;
@@ -167,39 +173,37 @@ form input {
   border-radius: 30px;
   border: 0;
   cursor: pointer;
+  color: #c2cbe5;
+  padding-left: 2em;
+  font-family: "Chivo";
 }
 
 form input::-webkit-input-placeholder {
   color: #c2cbe5;
-  padding-left: 2em;
   font-family: "Chivo";
   font-size: 14px;
 }
 
 form input::-moz-placeholder {
   color: #c2cbe5;
-  padding-left: 2em;
   font-family: "Chivo";
   font-size: 14px;
 }
 
 form input:-ms-input-placeholder {
   color: #c2cbe5;
-  padding-left: 2em;
   font-family: "Chivo";
   font-size: 14px;
 }
 
 form input::-ms-input-placeholder {
   color: #c2cbe5;
-  padding-left: 2em;
   font-family: "Chivo";
   font-size: 14px;
 }
 
 form input::placeholder {
   color: #c2cbe5;
-  padding-left: 2em;
   font-family: "Chivo";
   font-size: 14px;
 }
