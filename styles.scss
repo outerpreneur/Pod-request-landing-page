@@ -247,6 +247,7 @@ form button:hover {
     top: -3em;
     left: 0;
     right: 0;
+    width: 100px;
     text-align: center;
   }
   .pattern {
@@ -266,6 +267,7 @@ form button:hover {
     background-color: #12172595;
     height: 100vh;
     justify-content: center;
+    gap: 5px;
   }
 
   .inner-content h1 {
@@ -289,6 +291,8 @@ form button:hover {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   form input {
