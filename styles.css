@@ -321,6 +321,7 @@ form button:hover {
             justify-content: center;
   }
   .logo-row img {
+    margin-top: 2em;
     width: 50px;
   }
   form {
