@@ -1,0 +1,295 @@
+// colors
+
+$fluor-green: #34e6af;
+$button-background: #2c344b;
+$main-background: #121725;
+$white: #fff;
+$dark-gray: #5a668a;
+$light-gray: #c2cbe5;
+
+$font-chivo: "Chivo";
+
+// reset
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+// structure
+
+body {
+  background-color: $main-background;
+  padding: 130px 0 130px 165px;
+  height: 100vh;
+  position: relative;
+}
+
+.wrapper {
+  height: 100%;
+  background-image: url(./assets/desktop/image-host.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 60% 100%;
+  object-fit: contain;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.inner-content {
+  background-color: $main-background;
+  width: 50%;
+  padding: 90px 60px 0 0;
+}
+
+// inner content  {
+
+.logo {
+  position: absolute;
+  top: 0;
+  transform: translateY(100px);
+}
+
+.pattern {
+  position: absolute;
+  right: 0;
+  bottom: 120px;
+  transform: translateY(50px);
+}
+
+.inner-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.inner-content h1 {
+  text-transform: uppercase;
+  color: $fluor-green;
+  font-family: $font-chivo;
+  font-weight: 100;
+  line-height: 52px;
+  font-size: 52px;
+}
+
+.inner-content h1 span {
+  color: $light-gray;
+}
+
+.inner-content p {
+  color: $light-gray;
+  font-family: $font-chivo;
+  line-height: 28px;
+  font-weight: 100;
+  font-size: 18px;
+  max-width: 445px;
+}
+
+form {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+form input {
+  width: 52.5%;
+  height: 56px;
+  background-color: $dark-gray;
+  border-radius: 30px;
+  border: 0;
+  cursor: pointer;
+}
+
+form input::placeholder {
+  color: $light-gray;
+  padding-left: 2em;
+  font-family: $font-chivo;
+  font-size: 14px;
+}
+
+form button {
+  width: 162px;
+  height: 46px;
+  background-color: $fluor-green;
+  border-radius: 30px;
+  border: none;
+  font-family: $font-chivo;
+  font-weight: bold;
+  font-size: 14px;
+  position: absolute;
+  right: 48.5%;
+  top: 7%;
+  cursor: pointer;
+}
+
+.logo-row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.logo-row {
+  width: 90px;
+}
+
+@media screen and (max-width: 1500px) {
+  body {
+    padding: 0 0 0 2em;
+  }
+  .logo {
+    top: -20px;
+  }
+  .pattern {
+    left: 0;
+    bottom: 30px;
+  }
+  .wrapper {
+    align-items: center;
+    background-size: 70% 75%;
+    background-position: top right;
+  }
+  .inner-content {
+    width: 90%;
+  }
+
+  .inner-content h1 {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 0;
+    width: 100%;
+  }
+  .logo {
+    margin: 0 auto;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+  .pattern {
+    left: 0;
+    bottom: 30px;
+  }
+  .wrapper {
+    padding: 0;
+    background-size: cover;
+    object-fit: cover;
+  }
+  .inner-content {
+    padding: 2em;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    background-color: #12172595;
+    height: 100vh;
+    justify-content: center;
+  }
+
+  .inner-content h1 {
+    font-size: 26px;
+  }
+
+  .logo-row {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .logo-row img {
+    width: 50px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  form input {
+    width: 327px;
+    height: 46px;
+  }
+
+  form button {
+    position: static;
+    width: 327px;
+    height: 46px;
+  }
+  .pattern {
+    display: none;
+  }
+}
