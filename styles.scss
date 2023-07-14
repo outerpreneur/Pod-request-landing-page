@@ -6,6 +6,7 @@ $main-background: #121725;
 $white: #fff;
 $dark-gray: #5a668a;
 $light-gray: #c2cbe5;
+$button-hover: #b3ffe2;
 
 $font-chivo: "Chivo";
 
@@ -191,6 +192,11 @@ form button {
   right: 48.5%;
   top: 7%;
   cursor: pointer;
+  color: $main-background;
+}
+
+form button:hover {
+  background-color: $button-hover;
 }
 
 .logo-row {
@@ -238,6 +244,7 @@ form button {
     z-index: 1;
     margin-left: auto;
     margin-right: auto;
+    top: -3em;
     left: 0;
     right: 0;
     text-align: center;
@@ -263,6 +270,10 @@ form button {
 
   .inner-content h1 {
     font-size: 26px;
+  }
+
+  .inner-content p {
+    font-size: 15px;
   }
 
   .logo-row {
