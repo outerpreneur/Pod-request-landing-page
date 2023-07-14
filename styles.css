@@ -290,8 +290,9 @@ form button:hover {
   .wrapper {
     padding: 0;
     background-size: cover;
-    -o-object-fit: cover;
-       object-fit: cover;
+    -o-object-fit: fill;
+       object-fit: fill;
+    background-position: -420px;
   }
   .inner-content {
     padding: 2em;

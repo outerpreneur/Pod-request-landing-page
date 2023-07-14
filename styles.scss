@@ -267,7 +267,8 @@ form button:hover {
   .wrapper {
     padding: 0;
     background-size: cover;
-    object-fit: cover;
+    object-fit: fill;
+    background-position: -420px;
   }
   .inner-content {
     padding: 2em;
